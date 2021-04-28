@@ -15,18 +15,11 @@
       "tech": "John Doe"
     },
     {
-      "id": 3,
-      "message": "Changed memory on workstation 050",
-      "attention": false,
-      "date": "04-20-2019",
-      "tech": "Sara Wilson"
-    },
-    {
-      "message": "Changed network on server 007",
-      "attention": false,
-      "tech": "Sam Smith",
-      "date": "2021-04-28T05:24:18.313Z",
-      "id": 4
+      "message": "Moving stationg 009 to room 2457",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2021-04-28T05:59:39.835Z",
+      "id": 3
     }
   ],
   "techs": [
