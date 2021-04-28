@@ -83,7 +83,7 @@ export const deleteLog = (id) => async (dispatch) => {
 };
 
 // Update log on server
-export const UpdateLog = (log) => async (dispatch) => {
+export const updateLog = (log) => async (dispatch) => {
   try {
     setLoading();
 
