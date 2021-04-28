@@ -3,23 +3,23 @@
     {
       "id": 1,
       "message": "Changed hard drive on workstation 005",
-      "attention": false,
-      "date": "04-20-2019",
-      "tech": "Sam Smith"
+      "attention": true,
+      "tech": "Jon Doe",
+      "date": "2021-04-28T19:33:14.501Z"
     },
     {
       "id": 2,
-      "message": "Workstation 007 not posting",
+      "message": "Workstation 007  posting",
       "attention": true,
-      "date": "04-20-2019",
-      "tech": "John Doe"
+      "tech": "Jon Doe",
+      "date": "2021-04-28T19:32:51.209Z"
     },
     {
+      "id": 3,
       "message": "Moving stationg 009 to room 2457",
       "attention": true,
       "tech": "Sara Wilson",
-      "date": "2021-04-28T05:59:39.835Z",
-      "id": 3
+      "date": "2021-04-28T19:31:18.054Z"
     }
   ],
   "techs": [
