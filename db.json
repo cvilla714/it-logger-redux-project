@@ -3,16 +3,16 @@
     {
       "id": 1,
       "message": "Changed hard drive on workstation 005",
-      "attention": true,
+      "attention": false,
       "tech": "Jon Doe",
-      "date": "2021-04-28T19:33:14.501Z"
+      "date": "2021-04-28T21:14:43.928Z"
     },
     {
       "id": 2,
-      "message": "Workstation 007  posting",
-      "attention": true,
-      "tech": "Jon Doe",
-      "date": "2021-04-28T19:32:51.209Z"
+      "message": " 007  posting",
+      "attention": false,
+      "tech": "Sara Wilson",
+      "date": "2021-04-28T21:15:18.329Z"
     },
     {
       "id": 3,
