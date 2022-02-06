@@ -14,7 +14,6 @@ const AddLogModal = ({ addLog }) => {
     if (message === '' || tech === '') {
       M.toast({ html: 'Please enter a message and tech' });
     } else {
-      // console.log(message, tech, attention);
       const newLog = {
         message,
         attention,
@@ -38,7 +37,12 @@ const AddLogModal = ({ addLog }) => {
         <h4>Enter System Log</h4>
         <div className="row">
           <div className="input-field">
-            <input type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
+            <input
+              type="text"
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
             <label htmlFor="message" className="active">
               Log Message
             </label>
@@ -46,13 +50,15 @@ const AddLogModal = ({ addLog }) => {
         </div>
         <div className="row">
           <div className="input-field">
-            <select name="tech" value={tech} className="browser-default" onChange={(e) => setTech(e.target.value)}>
+            <select
+              name="tech"
+              value={tech}
+              className="browser-default"
+              onChange={(e) => setTech(e.target.value)}
+            >
               <option value="" disabled>
                 Select Technician
               </option>
-              {/* <option value="Jon Doe">Jon Doe</option>
-              <option value="Sam Smith">Sam Smith</option>
-              <option value="Sara Wilson">Sara Wilson</option> */}
               <TechSelectOptions />
             </select>
           </div>
@@ -61,7 +67,13 @@ const AddLogModal = ({ addLog }) => {
           <div className="input-field">
             <p>
               <label>
-                <input type="checkbox" className="filled-in" checked={attention} value={attention} onChange={(e) => setAttention(!attention)} />
+                <input
+                  type="checkbox"
+                  className="filled-in"
+                  checked={attention}
+                  value={attention}
+                  onChange={(e) => setAttention(!attention)}
+                />
                 <span>Needs Attention</span>
               </label>
             </p>
@@ -69,7 +81,11 @@ const AddLogModal = ({ addLog }) => {
         </div>
       </div>
       <div className="modal-footer">
-        <a href="#!" onClick={onSubmit} className="modal-close waves-effect waves-green btn-flat">
+        <a
+          href="#!"
+          onClick={onSubmit}
+          className="modal-close waves-effect waves-green btn-flat"
+        >
           Enter
         </a>
       </div>
