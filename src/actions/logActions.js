@@ -1,18 +1,14 @@
-import { GET_LOGS, SET_LOADING, LOGS_ERROR, ADD_LOG, DELETE_LOGS, SET_CURRENT, UPDATE_LOG, CLEAR_CURRENT, SEARCH_LOGS } from './types';
-
-// export const getLogs = () => {
-//   return async (dispatch) => {
-//     setLoading();
-
-//     const res = await fetch('/logs');
-//     const data = await res.json();
-
-//     dispatch({
-//       type: GET_LOGS,
-//       paylaod: data,
-//     });
-//   };
-// };
+import {
+  GET_LOGS,
+  SET_LOADING,
+  LOGS_ERROR,
+  ADD_LOG,
+  DELETE_LOGS,
+  SET_CURRENT,
+  UPDATE_LOG,
+  CLEAR_CURRENT,
+  SEARCH_LOGS,
+} from './types';
 
 //Get logs from server
 export const getLogs = () => async (dispatch) => {
@@ -29,7 +25,6 @@ export const getLogs = () => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: LOGS_ERROR,
-      // payload: error.response.data,
       payload: error.response.statusText,
     });
   }
@@ -56,7 +51,6 @@ export const addLog = (log) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: LOGS_ERROR,
-      // payload: error.response.data,
       payload: error.response.statusText,
     });
   }
@@ -70,8 +64,6 @@ export const deleteLog = (id) => async (dispatch) => {
     await fetch(`/logs/${id}`, {
       method: 'DELETE',
     });
-    // const data = await res.json();
-
     dispatch({
       type: DELETE_LOGS,
       payload: id,
@@ -79,7 +71,7 @@ export const deleteLog = (id) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: LOGS_ERROR,
-      // payload: error.response.data,
+
       payload: error.response.statusText,
     });
   }
@@ -106,7 +98,6 @@ export const updateLog = (log) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: LOGS_ERROR,
-      // payload: error.response.data,
       payload: error.response.statusText,
     });
   }
@@ -127,7 +118,7 @@ export const searchLogs = (text) => async (dispatch) => {
   } catch (error) {
     dispatch({
       type: LOGS_ERROR,
-      // payload: error.response.data,
+
       payload: error.response.statusText,
     });
   }
